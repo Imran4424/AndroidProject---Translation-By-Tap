@@ -19,4 +19,20 @@ public class MainActivity extends AppCompatActivity {
     public void imagePressed(View v) {
 
     }
+
+    public void translateLeft() {
+        arshadImage.animate().translationXBy(1800).setDuration(2000);
+    }
+
+    public void translateRight() {
+        arshadImage.animate().translationXBy(-1800).setDuration(2000);
+    }
+
+    public  void translateUp() {
+        arshadImage.animate().translationYBy(1800).setDuration(2000);
+    }
+
+    public void translateDown() {
+        arshadImage.animate().translationYBy(-1800).setDuration(2000);
+    }
 }
