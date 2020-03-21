@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttonFullScreen;
     int[] stateVales;
     int index;
+    int translationValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         buttonFullScreen = (Button) findViewById(R.id.buttonFullScreen);
         stateVales = new int[]{1, -1, -1, 1, 2, -2, -2, 2};
         index = 0;
+        translationValue = 2000;
     }
 
     public void buttonPressed(View v) {
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void translateLeft() {
-        arshadImage.animate().translationXBy(1800).setDuration(2000);
+        arshadImage.animate().translationXBy(translationValue).setDuration(2000);
     }
 
     public void translateRight() {
