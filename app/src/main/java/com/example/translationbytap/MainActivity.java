@@ -9,9 +9,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     ImageView arshadImage;
-    int currentStateValue;
-    int secondStateValue;
-    int thirdStateValue;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
