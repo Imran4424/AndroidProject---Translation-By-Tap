@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void translateRight() {
-        arshadImage.animate().translationXBy(-1800).setDuration(2000);
+        arshadImage.animate().translationXBy(-translationValue).setDuration(2000);
     }
 
     public  void translateUp() {
