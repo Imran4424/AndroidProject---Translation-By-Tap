@@ -23,7 +23,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void imagePressed(View v) {
+        if(1 == stateVales[index]) {
+            translateLeft();
+            index++;
+        } else if(-1 == stateVales[index]) {
+            translateRight();
+            index++;
+        } else if(2 == stateVales[index]) {
+            translateUp();
+            index++;
+        } else if(-2 == stateVales[index]) {
+            translateDown();
+            index++;
+        }
 
+        if(index == stateVales.length) {
+            index = 0;
+        }
     }
 
     public void translateLeft() {
