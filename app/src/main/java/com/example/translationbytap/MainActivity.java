@@ -9,7 +9,8 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     ImageView arshadImage;
-
+    int[] stateVales;
+    int index;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         arshadImage = (ImageView) findViewById(R.id.imageViewArshad);
-
+        stateVales = new int[]{1, -1, -1, 1, 2, -2, -2, 2};
+        index = 0;
     }
 
     public void imagePressed(View v) {
-        
+
     }
 
     public void translateLeft() {
