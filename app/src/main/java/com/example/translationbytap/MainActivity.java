@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         buttonFullScreen = (Button) findViewById(R.id.buttonFullScreen);
         stateVales = new int[]{1, -1, -1, 1, 2, -2, -2, 2};
         index = 0;
-        translationValue
+        translationValue = 2000;
     }
 
     public void buttonPressed(View v) {
