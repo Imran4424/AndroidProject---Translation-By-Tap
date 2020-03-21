@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         arshadImage = (ImageView) findViewById(R.id.imageViewArshad);
+        buttonFullScreen = (Button) findViewById(R.id.buttonFullScreen);
         stateVales = new int[]{1, -1, -1, 1, 2, -2, -2, 2};
         index = 0;
     }
