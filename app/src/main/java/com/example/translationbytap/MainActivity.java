@@ -9,6 +9,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     ImageView arshadImage;
+
     int[] stateVales;
     int index;
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         index = 0;
     }
 
-    public void imagePressed(View v) {
+    public void buttonPressed(View v) {
         if(1 == stateVales[index]) {
             translateLeft();
             index++;
