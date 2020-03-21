@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(index == stateVales.length) {
             index = 0;
+            
         }
     }
 
