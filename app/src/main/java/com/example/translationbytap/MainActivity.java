@@ -17,17 +17,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         arshadImage = (ImageView) findViewById(R.id.imageViewArshad);
-        currentStateValue = 0;
-        secondStateValue = 1;
-        thirdStateValue = 0;
+
     }
 
     public void imagePressed(View v) {
-        if(0 == currentStateValue) {
-            currentStateValue = secondStateValue;
-            secondStateValue = thirdStateValue;
-            thirdStateValue = -currentStateValue;
-        }
+        
     }
 
     public void translateLeft() {
