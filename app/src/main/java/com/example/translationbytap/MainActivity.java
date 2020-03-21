@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void translateUp() {
-        arshadImage.animate().translationYBy(1800).setDuration(2000);
+        arshadImage.animate().translationYBy(translationValue).setDuration(2000);
     }
 
     public void translateDown() {
