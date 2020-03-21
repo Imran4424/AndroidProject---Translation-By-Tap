@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     public void imagePressed(View v) {
         if(0 == currentStateValue) {
             currentStateValue = secondStateValue;
-            secondStateValue = 
+            secondStateValue = thirdStateValue;
+            thirdStateValue = -currentStateValue;
         }
     }
 
