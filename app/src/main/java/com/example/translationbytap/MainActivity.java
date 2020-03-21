@@ -9,15 +9,24 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     ImageView arshadImage;
+    int currentStateValue;
+    int secondStateValue;
+    int thirdStateValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        arshadImage = (ImageView) findViewById(R.id.imageViewArshad);
+        stateValue = 0;
+        nextStateValue = 1;
     }
 
     public void imagePressed(View v) {
-
+        if(0 == currentStateValue) {
+            nextStateValue = 0
+        }
     }
 
     public void translateLeft() {
